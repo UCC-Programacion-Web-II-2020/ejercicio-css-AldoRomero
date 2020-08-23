@@ -10,6 +10,21 @@ img{ border:0; }
 /*Texto alineado al centro*/
 .center{ text-align:center; }
 
+fieldset{
+	color: dodgerblue;
+}
+
+input{
+	color: steelblue;
+}
+
+textarea{
+	color: steelblue;
+}
+
+button{  background-color: lightblue; color: blue}
+
+
 h1{	font-size: 2.0em; }
 h2{	font-size: 1.5em; }
 
@@ -20,24 +35,45 @@ h2{	font-size: 1.5em; }
 	max-width: 1024px;
 	border: 1px solid #000;
 }
+
+table, th, td{
+	border: 2px solid dodgerblue;
+}
+
+th{
+	color: blue;
+	background-color: lightgray;
+}
+
+table{
+	margin-left: auto;
+	margin-right: auto;
+}
+
 /*********************************/
 /*Encabezado*/
 #header {
 /*Color en degradado creado en http://www.colorzilla.com/gradient-editor/ */
 	padding: 20px;
 	height:60px;
+	background-color: deepskyblue;
 }
 
 #header h1 { 
 	margin: 0;
-	font-weight:300;	  
+	font-weight:300;
+	text-align: center;
+	color: white;
+	font-family: 'Titillium Web', sans-serif;
 }
 /*********************************/
 /*Menú*/
 #navigation {
 	float: left;
 	width: 100%;
-	border:1px solid #000
+	border:1px solid #000;
+	font-family: 'Titillium Web', sans-serif;
+	background-color: lightskyblue;
 }
 
 #navigation ul {	
@@ -52,7 +88,8 @@ h2{	font-size: 1.5em; }
 	display: block;
 	float: left;
 	padding: 5px 10px;
-	text-decoration: none;	
+	text-decoration: none;
+	color: white;
 }
 
 #navigation li a:hover { background:#FF0000; }
@@ -61,19 +98,24 @@ h2{	font-size: 1.5em; }
 #content {
 	clear: left;
 	padding: 20px;
+	font-family: 'Titillium Web', sans-serif;
 }
 
 #content a { 
 	/* Color de los hipervinculos*/
+	color: red;
 }
 
 #content h1 {		
-	padding-bottom: 10px;	
+	padding-bottom: 10px;
 }
 
 #content h1, #content h2 {
-	margin: 0 0 1em 0;	
+	margin: 0 0 1em 0;
+	color: blue;
+	text-align: center;
 }
+
 /*********************************/
 /*Pie*/
 #footer {
@@ -81,6 +123,9 @@ h2{	font-size: 1.5em; }
 	padding: 15px;
 	height: 150px;
 	border: 1px solid #000;
+	font-family: 'Titillium Web', sans-serif;
+	color: blue;
+	background-color: lightblue;
 }
 
 #footer p { float:right; }
@@ -92,11 +137,13 @@ h2{	font-size: 1.5em; }
 	list-style-type: none;
 	text-align:left;
 	margin: 0 0 10px 0;		
-	padding:0;	
+	padding:0;
+
 }
 
 #footer ul li a {
 	text-decoration:none;
+	color: red;
 }
 
 #footer ul li a:hover {	text-decoration:underline; }
